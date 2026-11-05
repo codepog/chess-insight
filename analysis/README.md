@@ -25,6 +25,6 @@ The base model uses pre-move features, a chronological whole-game split, trainin
 
 The tactical classifiers are explicit, conservative motif detectors. They can assign overlapping labels. More than a thousand refined large-error moves do not match those detectors and were left unclassified. Action labels such as a quiet king move do not establish the psychological cause of a mistake.
 
-The website export includes 20 review positions and six assessment positions from six different games outside the review collection. All 701 legal candidate first moves are evaluated. The assessment examples are new to this collection, not necessarily new to the original player. This content separation is distinct from the classifier's chronological train/test split.
+The website offers 26 practice positions. The export retains its original two collections internally: 20 original examples and six additional rook endings from different games. All 701 legal candidate first moves are evaluated. They now appear in one practice session; no separate assessment mode is exposed. The classifier’s chronological train/test split remains separate from practice content.
 
 Practice feedback uses separately precomputed Stockfish 19 searches at 100,000 nodes per candidate; the browser neither runs nor downloads a chess engine. Browser inference uses the exact saved logistic coefficients. First attempts, retries and reveals have distinct scoring behavior, stored only in the visitor's browser. No later real-game training effect has been measured.

@@ -42,7 +42,7 @@ for (gid,ply),note in zip(selection,notes):
  best=max(candidates,key=lambda c:c['cp']);actual=next(c for c in candidates if c['uci']==r['played_uci'])
  own=b.turn;me=g['players']['white' if own else 'black'];opp=g['players']['black' if own else 'white']
  out.append({'id':f'{gid}-{ply}','gameId':gid,'ply':ply,'fen':b.fen(),'color':r['color'],'title':note[0],'explanation':note[1],'takeaway':note[2],
- 'theme':'Rook-ending transfer check','category':'Endgames','speed':r['speed'],'clock':r['clock_before'],'played':r['played_san'],'playedUci':r['played_uci'],
+ 'theme':'Endgame decision in single rook versus single rook','category':'Endgames','speed':r['speed'],'clock':r['clock_before'],'played':r['played_san'],'playedUci':r['played_uci'],
  'bestSan':best['san'],'best':best['line'],'actual':actual['line'],'preCp':best['cp'],'postCp':actual['cp'],'preMate':best['mate'],'postMate':actual['mate'],
  'candidates':candidates,'opponent':opp.get('user',{}).get('name','Anonymous'),'rating':me.get('rating'),'opponentRating':opp.get('rating'),
  'date':g['createdAt'],'timeControl':f"{g['clock']['initial']//60}+{g['clock']['increment']}",'result':r['result']})

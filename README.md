@@ -2,7 +2,7 @@
 
 [Open the live demo](https://codepog.github.io/chess-insight/)
 
-I used 618 of chickenboi2's standard Lichess games to identify recurring mistakes and build practice positions. The business case proposes an optional learning plan after game review, with separate assessment results and a budget for running the service.
+I used 618 of chickenboi2's standard Lichess games to identify recurring mistakes and build practice positions. The business case proposes an optional learning plan after game review, with focused practice, a proposed evaluation plan and a budget for running the service.
 
 ## Run locally
 
@@ -18,7 +18,7 @@ Open http://127.0.0.1:4173. `npm start` runs the same command. Use an HTTP serve
 
 - **Overview:** thesis, archive summary, personal recommendations and historical rating.
 - **Game explorer:** 20 curated positions, original clock and move, better continuation and opponent refutation. Category and time-control filters; keyboard playback with arrow keys.
-- **Practice:** 20 review positions and six separate assessment positions from different source games. All 701 legal candidates have offline engine evaluations. Sound alternatives count. First attempts and reveals are stored only in the current browser. Retrying cannot raise the first-attempt score; revealing a solution excludes it.
+- **Practice:** 26 positions organized around three practice priorities. Move pieces directly on the board by dragging or selecting squares. All 701 legal candidates have offline engine evaluations. Sound alternatives count. First attempts and reveals are stored only in the current browser. Retrying cannot raise the first-attempt score; revealing a solution excludes it.
 - **Model lab:** the saved logistic regression performs actual inference in the browser on 50 held-out examples. Includes the whole-game chronological split, baselines, risk groups, coefficients and limits.
 - **Business case:** problem definition, nonprofit objectives, existing tools and competitors, delivery choices, a controlled pilot, a hypothetical cost scenario, and an explicit rollout decision.
 
@@ -53,6 +53,6 @@ After editing JavaScript or CSS, run `npm run version-assets` to update the asse
 
 The interface follows Apple's principles of clarity, hierarchy and deference to content: system typography, a quiet horizontal navigation bar, generous spacing and controls near the board. References: [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/), [Apple Design Resources](https://developer.apple.com/design/resources/), and the [community Apple Design System catalog](https://github.com/mjmirza/apple-design-system). No Apple font, icon or UI-kit files are distributed. No Chess.com or Lichess logos or interface code are used. Chess pieces are Cburnett designs distributed by python-chess; see `THIRD_PARTY_NOTICES.md`.
 
-Review results and assessment results are recorded separately. No later-game training outcome has been measured. The proposed service would be free on Lichess; its operating cost would need to fit a donation-funded budget. The competitor comparison covers existing review and personalized training features. This is an independent proposal, with no affiliation to those products.
+All practice positions share one first-attempt record. Separate assessments on unfamiliar positions are proposed for a pilot. No later-game training outcome has been measured. The proposed service would be free on Lichess; its operating cost would need to fit a donation-funded budget. The competitor comparison covers existing review and personalized training features. This is an independent proposal, with no affiliation to those products.
 
 This source is distributed under GPL-3.0-or-later. Public game records are attributed to their Lichess source links. Product references are linked from the Business case page. Its cost and retention scenarios use illustrative inputs.

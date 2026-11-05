@@ -33,4 +33,4 @@ assert.equal(d.riskBins.reduce((n,b)=>n+b.n,0),d.evaluation.test.n);
 assert(Math.abs(d.riskBins.reduce((n,b)=>n+b.errorRate*b.n,0)-d.evaluation.test.errors)<1e-8);
 for(const piece of ['wp','wn','wb','wr','wq','wk','bp','bn','bb','br','bq','bk'])assert(fs.existsSync(path.join(root,'assets',piece+'.svg')));
 for(const file of ['index.html','styles.css','app.js','assets/risk-model.json','assets/model-evaluation.json','assets/targeted-practice.pgn'])assert(fs.existsSync(path.join(root,file)));
-console.log('PASS: 20 review + 6 separate-game assessment positions, 701 candidate moves, grading, 50 fitted predictions, 353/118/118 disjoint split, full test aggregates and assets.');
+console.log('PASS: 26 practice positions (20 original + 6 additional games), 701 candidate moves, grading, 50 fitted predictions, 353/118/118 disjoint split, full test aggregates and assets.');
