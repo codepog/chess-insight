@@ -4,7 +4,7 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const paths={home:'M3 10 12 3l9 7v10H3ZM9 20v-7h6v7',board:'M3 3h18v18H3ZM3 9h18M3 15h18M9 3v18M15 3v18',target:'M21 12a9 9 0 1 1-9-9M17 3h4v4M21 3l-9 9M16 12a4 4 0 1 1-4-4',model:'M4 17v4h4M20 7V3h-4M4 7V3h4M20 17v4h-4M8 12h8M12 8v8',brief:'M8 3h8v4H8ZM8 5H4v16h16V5h-4M8 12h8M8 16h5',arrow:'M5 12h14M14 7l5 5-5 5',external:'M14 3h7v7M21 3 11 13M10 5H4v15h15v-6',clock:'M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0',games:'M6 3h12v18H6ZM9 7h6M9 11h6M9 15h4',chart:'M4 3v17h17M7 14l4-4 4 2 5-7',check:'M5 12l4 4L19 6',chevron:'m9 5 7 7-7 7',prev:'m15 5-7 7 7 7',first:'M5 5v14M18 5l-8 7 8 7',last:'M19 5v14M6 5l8 7-8 7',flip:'M5 7h14l-4-4M19 17H5l4 4M19 7v5M5 17v-5',light:'M9 19h6M9 22h6M8 15a6 6 0 1 1 8 0l-1 2H9Z',shield:'M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6ZM8 12l3 3 5-6',download:'M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5',book:'M12 5v16M12 5C8 3 4 3 2 4v15c3-1 6-1 10 2 4-3 7-3 10-2V4c-3-1-6-1-10 1'};
 const icon=n=>`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="${paths[n]||paths.arrow}"/></svg>`;
-const nav=[['overview','Overview','home'],['explore','Games','board'],['practice','Practice','target'],['model','Model','model'],['product','Business case','brief']];
+const nav=[['overview','Overview','home'],['product','Business case','brief'],['model','The Model','model'],['explore','My games','board']];
 // The actual move immediately before the decision: 61. Rxe2, from game qlnvDLnu.
 const homeArrival={fen:'8/6pk/5p2/4pP2/4P2P/3P4/2r1pK2/4R3 w - - 3 61',uci:'e1e2',san:'Rxe2'};
 let page='overview',homeAnimationTimer=null,homeAnimation=null,homeObserver=null;
@@ -199,11 +199,11 @@ function product(){
 }
 function render(){
   $('#navigation').innerHTML=nav.map(([id,name,ic])=>`<a href="#${id}" class="${page===id?'active':''}" ${page===id?'aria-current="page"':''} title="${name}">${icon(ic)}<span>${name}</span></a>`).join('');
-  $('#page-name').textContent=nav.find(n=>n[0]===page)?.[1]||'Overview';
+  $('#page-name').textContent=page==='practice'?'Practice':nav.find(n=>n[0]===page)?.[1]||'Overview';
   document.title=`${$('#page-name').textContent} — Chess Insight`;
   $('#content').innerHTML=`<div class="page-enter">${({overview,explore:explorer,practice,model,product}[page]||overview)()}</div>`;
 }
-function route(){stopHomeAnimation();const [name,query]=(location.hash.slice(1)||'overview').split('?');page=nav.some(x=>x[0]===name)?name:'overview';const params=new URLSearchParams(query||'');
+function route(){stopHomeAnimation();const [name,query]=(location.hash.slice(1)||'overview').split('?');page=name==='practice'||nav.some(x=>x[0]===name)?name:'overview';const params=new URLSearchParams(query||'');
   if(page==='explore'){state.exploreId=params.get('id')||state.exploreId;state.filter=params.get('filter')||'All';state.branch='best';state.step=0;state.flip=false}
   if(page==='practice'){state.practiceFilter=priorities.some(x=>x.key===params.get('focus'))?params.get('focus'):'Endgames';state.practiceIndex=0;const id=params.get('id');if(id){state.practiceFilter='All';const idx=practiceDeck().findIndex(p=>p.id===id);if(idx>=0)state.practiceIndex=idx}resetPractice();state.flip=false}
   render();window.scrollTo(0,0);if(page==='overview')playHomeAnimation();
