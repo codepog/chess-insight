@@ -2,7 +2,7 @@
 
 [Open the live demo](https://codepog.github.io/chess-insight/)
 
-A product and business strategy proposal for **Lichess**, grounded in **chickenboi2's public games**. Connect existing analysis to a focused practice plan and a separate assessment, while preserving free access and operating within a sustainable donation-funded budget.
+I used 618 of chickenboi2's standard Lichess games to identify recurring mistakes and build practice positions. The business case proposes an optional learning plan after game review, with separate assessment results and a budget for running the service.
 
 ## Run locally
 
@@ -24,9 +24,9 @@ Open http://127.0.0.1:4173. `npm start` runs the same command. Use an HTTP serve
 
 ## What the model does
 
-The trained classifier predicts a binary engine-defined error risk, using 21 features available before the player's move. It does **not** learn labels such as fork or pin. Those motif labels come from explicit chess rules and engine continuations.
+The classifier uses 21 pre-move features to estimate the risk of an engine-defined error. Separate chess rules and engine continuations supply the fork, pin and other motif labels.
 
-The model uses 589 standard bullet games, split chronologically into 353 training, 118 validation and 118 test games. The held-out 3,765 turns contain 375 error labels. ROC AUC is 0.689; log loss is 0.304 versus 0.324 for a constant-rate baseline. This is an evaluated personal model, not a proven training intervention.
+The model uses 589 standard bullet games, split chronologically into 353 training, 118 validation and 118 test games. The held-out 3,765 turns contain 375 error labels. ROC AUC is 0.689; log loss is 0.304 versus 0.324 for a constant-rate baseline. These results evaluate prediction on one player's games. A controlled study would be needed to evaluate the training.
 
 Original engine labels use Stockfish 19 at 12,000 nodes. Refined motif/endgame review uses 100,000 nodes. Practice grades compare separately checked legal candidates, each searched at 100,000 nodes. Finite search budgets can produce different estimates. The website is a frozen case study, not a live engine or a general-purpose analysis service.
 
@@ -53,6 +53,6 @@ Run `npm run check` with Node 18 or newer. The implementation was also reviewed 
 
 The interface follows Apple's principles of clarity, hierarchy and deference to content: system typography, a quiet horizontal navigation bar, generous spacing and controls near the board. References: [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/), [Apple Design Resources](https://developer.apple.com/design/resources/), and the [community Apple Design System catalog](https://github.com/mjmirza/apple-design-system). No Apple font, icon or UI-kit files are distributed. No Chess.com or Lichess logos or interface code are used. Chess pieces are Cburnett designs distributed by python-chess; see `THIRD_PARTY_NOTICES.md`.
 
-The product distinction demonstrated here is a free guided-learning proposal for Lichess, with review success separated from first-exposure assessment and follow-up real games explicitly unmeasured. The business case evaluates learning, repeat use, cost and trust; it does not propose subscriptions or paid feature access. Chess.com already offers Game Review retries, Insights, course recommendations and Skills; Aimchess already offers personalized plans. This case does not claim universal feature novelty or established learning improvement. Independent case study, not affiliated with these products.
+Review results and assessment results are recorded separately. No later-game training outcome has been measured. The proposed service would be free on Lichess; its operating cost would need to fit a donation-funded budget. The competitor comparison covers existing review and personalized training features. This is an independent proposal, with no affiliation to those products.
 
-This source is distributed under GPL-3.0-or-later. Public game records are attributed to their Lichess source links. Product claims are sourced on the Product thesis page; proposed business and learning outcomes are explicitly hypotheses.
+This source is distributed under GPL-3.0-or-later. Public game records are attributed to their Lichess source links. Product references are linked from the Business case page. Its cost and retention scenarios use illustrative inputs.
