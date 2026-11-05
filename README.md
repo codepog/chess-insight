@@ -2,7 +2,7 @@
 
 [Open the live demo](https://codepog.github.io/chess-insight/)
 
-I used 618 of chickenboi2's standard Lichess games to identify recurring mistakes and build practice positions. The business case proposes an optional learning plan after game review, with focused practice, a proposed evaluation plan and a budget for running the service.
+I used 618 of chickenboi2's standard Lichess games to identify recurring mistakes and build practice positions. The business case proposes an optional learning plan after game review, with focused practice, a proposed evaluation plan and a browser-first operating plan.
 
 ## Run locally
 
@@ -58,3 +58,5 @@ All practice positions share one first-attempt record. Separate assessments on u
 This source is distributed under GPL-3.0-or-later. Public game records are attributed to their Lichess source links. Product references are linked from the Business case page. Its cost and retention scenarios use illustrative inputs.
 
 Latest update: the author reported a new test ROC AUC of **0.789** on November 5, 2026, an increase of 0.100 from the previously displayed 0.689. The updated predictions, split details and fitted artifact were not supplied. The site labels the new score as reported; all other metrics, predictions and saved coefficients remain those of the reproducible original run. See `dist/assets/reported-evaluation.json`.
+
+Operating plan: reuse existing evaluations, analyze missing positions and train locally, cache results, and update incrementally. Lichess would deliver assets and game data and maintain the feature. Pilot measurements cover bandwidth, data requests, maintenance effort and device performance. No per-plan prices, hypothetical cohort costs or donor forecasts are presented. Local training and engine analysis are proposed; the demo currently uses offline artifacts with browser-side prediction.
