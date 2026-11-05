@@ -98,7 +98,7 @@ while (pgn:=chess.pgn.read_game(f)) is not None:
     x=features(b,own,float(r['clock_before']),initial,inc,me.get('rating',0)-opp.get('rating',0),float(r['pre_cp']))
     risk=1/(1+math.exp(-(model['intercept']+sum((a-mu)/s*w for a,mu,s,w in zip(x,model['means'],model['scales'],model['coefficients'])))))
     cat='Endgames' if pgn.headers['Event'].startswith('Endgame') else ('Defense' if pgn.headers['Event'].startswith('Allowed') else 'Tactics')
-    positions.append({'id':pid,'gameId':g['id'],'ply':int(r['ply']),'fen':b.fen(),'title':title,'category':cat,
+    positions.append({'id':pid,'gameId':g['id'],'ply':int(r['ply']),'fen':b.fen(),'inCheck':b.is_check(),'title':title,'category':cat,
       'theme':pgn.headers['Event'],'explanation':explanation,'takeaway':takeaway,'color':r['color'],'speed':r['speed'],
       'clock':round(float(r['clock_before']),2),'thinking':round(float(r['thinking_seconds']),2),
       'played':r['played_san'],'playedUci':r['played_uci'],'bestSan':b.san(chess.Move.from_uci(line[0])),
