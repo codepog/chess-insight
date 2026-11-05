@@ -23,3 +23,5 @@
 @media(prefers-reduced-motion:reduce){.decision-choice,.decision-choice .icon{transition:none}.decision-choice:hover,.decision-choice:hover .icon{transform:none}}
 
 @media(min-width:681px) and (max-width:900px){.header-inner{padding:0 24px;gap:16px}.brand{font-size:18px}nav{gap:14px}nav a{font-size:12px}.nav-cta{font-size:11px;padding:8px 12px}}
+
+.reported-evaluation-note{margin:-15px 0 40px;padding:18px 22px;background:#f5f5f7;border-radius:12px;font-size:13px;color:#6e6e73;line-height:1.7}.reported-evaluation-note strong{color:#1d1d1f;font-weight:600}

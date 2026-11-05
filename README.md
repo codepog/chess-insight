@@ -26,7 +26,7 @@ Open http://127.0.0.1:4173. `npm start` runs the same command. Use an HTTP serve
 
 The classifier uses 21 pre-move features to estimate the risk of an engine-defined error. Separate chess rules and engine continuations supply the fork, pin and other motif labels.
 
-The model uses 589 standard bullet games, split chronologically into 353 training, 118 validation and 118 test games. The held-out 3,765 turns contain 375 error labels. ROC AUC is 0.689; log loss is 0.304 versus 0.324 for a constant-rate baseline. These results evaluate prediction on one player's games. A controlled study would be needed to evaluate the training.
+The model uses 589 standard bullet games, split chronologically into 353 training, 118 validation and 118 test games. The held-out 3,765 turns contain 375 error labels. The saved run’s ROC AUC is 0.689; log loss is 0.304 versus 0.324 for a constant-rate baseline. These results evaluate prediction on one player's games. A controlled study would be needed to evaluate the training.
 
 Original engine labels use Stockfish 19 at 12,000 nodes. Refined motif/endgame review uses 100,000 nodes. Practice grades compare separately checked legal candidates, each searched at 100,000 nodes. Finite search budgets can produce different estimates. The website is a frozen case study, not a live engine or a general-purpose analysis service.
 
@@ -56,3 +56,5 @@ The interface follows Apple's principles of clarity, hierarchy and deference to 
 All practice positions share one first-attempt record. Separate assessments on unfamiliar positions are proposed for a pilot. No later-game training outcome has been measured. The proposed service would be free on Lichess; its operating cost would need to fit a donation-funded budget. The competitor comparison covers existing review and personalized training features. This is an independent proposal, with no affiliation to those products.
 
 This source is distributed under GPL-3.0-or-later. Public game records are attributed to their Lichess source links. Product references are linked from the Business case page. Its cost and retention scenarios use illustrative inputs.
+
+Latest update: the author reported a new test ROC AUC of **0.789** on November 5, 2026, an increase of 0.100 from the previously displayed 0.689. The updated predictions, split details and fitted artifact were not supplied. The site labels the new score as reported; all other metrics, predictions and saved coefficients remain those of the reproducible original run. See `dist/assets/reported-evaluation.json`.

@@ -1,0 +1,10 @@
+{
+  "reported_date": "2026-11-05",
+  "source": "Author-reported updated tests supplied in chat",
+  "roc_auc": 0.789,
+  "previous_displayed_roc_auc": 0.689,
+  "absolute_increase": 0.1,
+  "status": "Reported result; updated predictions and fitted model not supplied",
+  "saved_model_roc_auc": 0.6890273352999017,
+  "scope": "Do not attribute this reported result to the existing saved coefficients, log loss or calibration chart."
+}
