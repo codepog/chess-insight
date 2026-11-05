@@ -1,0 +1,79 @@
+{
+  "status": "trained",
+  "model": "L2 logistic regression implemented with NumPy",
+  "target": "Engine-proxy deterioration of at least 10 percentage points",
+  "features": [
+    "move_number",
+    "own_material",
+    "opponent_material",
+    "material_balance",
+    "pieces_on_board",
+    "own_pawns",
+    "opponent_pawns",
+    "log_legal_moves",
+    "in_check",
+    "endgame",
+    "opening",
+    "queens_on_board",
+    "rooks_on_board",
+    "king_distance",
+    "log_clock_before",
+    "clock_fraction",
+    "under_10_seconds",
+    "increment_seconds",
+    "rating_difference",
+    "as_white",
+    "pre_eval_proxy"
+  ],
+  "split": "Chronological 60 percent train / 20 percent validation / 20 percent test, grouped by whole games",
+  "split_games": [
+    353,
+    118,
+    118
+  ],
+  "train": {
+    "n": 11645,
+    "errors": 1223,
+    "error_rate": 0.10502361528553027,
+    "log_loss": 0.314901384652637,
+    "brier": 0.09020885883074452,
+    "auc": 0.692401663692425
+  },
+  "validation": {
+    "n": 3951,
+    "errors": 390,
+    "error_rate": 0.09870918754745633,
+    "log_loss": 0.30076626711543036,
+    "brier": 0.0853741169031189,
+    "auc": 0.6932855219291614
+  },
+  "test": {
+    "n": 3765,
+    "errors": 375,
+    "error_rate": 0.099601593625498,
+    "log_loss": 0.3042671035180183,
+    "brier": 0.0863111771164074,
+    "auc": 0.6890273352999017
+  },
+  "constant_baseline": {
+    "n": 3765,
+    "errors": 375,
+    "error_rate": 0.099601593625498,
+    "log_loss": 0.32436748874492466,
+    "brier": 0.0897108834197475,
+    "auc": 0.5
+  },
+  "clock_baseline": {
+    "n": 3765,
+    "errors": 375,
+    "error_rate": 0.099601593625498,
+    "log_loss": 0.324346176427099,
+    "brier": 0.08970715361828355,
+    "auc": 0.5031740412979351
+  },
+  "selected_l2": 0.01,
+  "beats_constant_log_loss": true,
+  "beats_clock_log_loss": true,
+  "scope": "Personal bullet play only. Predicts engine-labeled risk, not motives, teaching quality or improvement.",
+  "label_limitations": "Finite-search engine labels are noisy. Evaluation-proxy drops are not calibrated personal win probabilities. Position rows within a game are correlated."
+}

@@ -1,0 +1,20 @@
+{
+  "username": "chickenboi2",
+  "since": "2025-11-04T21:28:19-08:00",
+  "until": "2026-11-04T21:28:19-08:00",
+  "since_ms": 1762320499000,
+  "until_ms": 1793856499000,
+  "source": "https://lichess.org/api/games/user/chickenboi2?since=1762320499000&until=1793856499000&moves=true&pgnInJson=true&clocks=true&evals=true&opening=true&accuracy=true&ongoing=false&finished=true&sort=dateAsc",
+  "completed_games": 619,
+  "pgn_games": 619,
+  "speed_counts": {
+    "bullet": 590,
+    "blitz": 29
+  },
+  "analyzed_games": 31,
+  "games_with_clocks": 619,
+  "variants": [
+    "kingOfTheHill",
+    "standard"
+  ]
+}

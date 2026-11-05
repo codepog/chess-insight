@@ -1,0 +1,240 @@
+[Event "Missed free piece capture"]
+[Site "https://lichess.org/gKKAlMSL"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "rn2k1nr/3p1p1p/b5p1/1pp2NB1/p3P3/P1q2Q2/B1P2PPP/R3K2R w KQkq - 0 14"]
+[SetUp "1"]
+
+{ Missed free piece capture. You played Ke2. Find a better move before viewing the continuation. } 14. Qxc3 f6 15. Bxf6 Nc6 16. Nd6+ Kf8 17. Bg7+ Ke7 18. Qxc5 *
+
+[Event "Missed profitable material capture"]
+[Site "https://lichess.org/fCGYrT2D"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r1b1k2r/ppp2ppp/2nq4/3N4/3Qn3/5N2/PPP3PP/R1B1KB1R b KQkq - 0 9"]
+[SetUp "1"]
+
+{ Missed profitable material capture. You played Bf5. Find a better move before viewing the continuation. } 9... Nxd4 10. Nxd4 Qxd5 11. Be3 O-O 12. Bd3 Re8 13. O-O Bg4 *
+
+[Event "Missed mate in one"]
+[Site "https://lichess.org/lfuBOxok"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "2b5/2r5/pR4p1/1p2Pk2/1PpK1Pp1/2P4P/P7/8 w - - 0 42"]
+[SetUp "1"]
+
+{ Missed mate in one. You played Rxg6. Find a better move before viewing the continuation. } 42. Rf6# *
+
+[Event "Missed absolute pin tactic"]
+[Site "https://lichess.org/EPz68xy3"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "2k4r/p5p1/2p2p2/1p1rp2b/2N4P/3PQ3/qPPK1P2/R6R b - - 1 27"]
+[SetUp "1"]
+
+{ Missed absolute pin tactic. You played Qxa1. Find a better move before viewing the continuation. } 27... Qxc4 28. Rhg1 Qd4 29. Rxg7 Rd7 30. Qxd4 exd4 31. Rxd7 Kxd7 *
+
+[Event "Missed short mating sequence"]
+[Site "https://lichess.org/bcO54BEV"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r2r2k1/1b2bppp/p1q1p1n1/1p6/3B4/1BN5/PPPR1QPP/5RK1 w - - 6 19"]
+[SetUp "1"]
+
+{ Missed short mating sequence. You played Rfd1. Find a better move before viewing the continuation. } 19. Qxf7+ Kh8 20. Qxg7# *
+
+[Event "Missed knight fork"]
+[Site "https://lichess.org/RfTYCHaz"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r5k1/3r1ppp/p7/4R3/2Pp1B2/3Pn2P/1P1R2PK/8 b - - 4 31"]
+[SetUp "1"]
+
+{ Missed knight fork. You played Rb8. Find a better move before viewing the continuation. } 31... Nf1+ 32. Kg1 Nxd2 33. Bxd2 f6 34. Ra5 Re7 35. b4 Re2 *
+
+[Event "Missed fork with another piece"]
+[Site "https://lichess.org/jvjzb0Wr"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "1r4k1/5pp1/Q4n1p/3p4/5B2/P4P2/1q4PP/2R3K1 b - - 0 28"]
+[SetUp "1"]
+
+{ Missed fork with another piece. You played g5. Find a better move before viewing the continuation. } 28... Qd4+ 29. Kf1 Qxf4 30. Rc8+ Rxc8 31. Qxc8+ Kh7 32. Qc2+ g6 *
+
+[Event "Allowed free piece capture"]
+[Site "https://lichess.org/Oq8J1n0I"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "3r2k1/p4ppp/R2Np1q1/4P3/8/P3QN1P/5PP1/4n1K1 b - - 0 29"]
+[SetUp "1"]
+
+{ Allowed free piece capture. You played Nxf3+. Find a better move before viewing the continuation. } 29... Qxg2# ( 29... Nxf3+ { Actual move and checked opponent refutation. } 30. Qxf3 h6 31. Rxa7 Qg5 32. Nxf7 Qc1+ 33. Kh2 ) *
+
+[Event "Allowed profitable material capture"]
+[Site "https://lichess.org/NcTrrCAv"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r1b2rk1/p1p2ppp/3q1n2/8/3bN3/3P4/PPP2PPP/R1BQ1RK1 b - - 0 11"]
+[SetUp "1"]
+
+{ Allowed profitable material capture. You played Bb7. Find a better move before viewing the continuation. } 11... Nxe4 ( 11... Bb7 { Actual move and checked opponent refutation. } 12. Nxd6 cxd6 13. c3 Bb6 14. Bf4 g5 15. Bg3 ) 12. dxe4 Ba6 13. Re1 Qb6 14. Be3 Bxe3 15. Rxe3 Rfe8 *
+
+[Event "Allowed mate in one"]
+[Site "https://lichess.org/C7PVAIhZ"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "2kr3r/1ppq1ppp/pb3n2/1P2N3/Q1PnP3/6P1/P2N1PKP/R1B2R2 b - - 0 15"]
+[SetUp "1"]
+
+{ Allowed mate in one. You played axb5. Find a better move before viewing the continuation. } 15... Qe8 ( 15... axb5 { Actual move and checked opponent refutation. } 16. Qa8# ) 16. Nd3 *
+
+[Event "Allowed knight fork"]
+[Site "https://lichess.org/EI1GVeLt"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r3kb1r/1pp1nppp/2qp4/1p1Np3/4PPb1/5N2/PPP3PP/R1BQ1RK1 b kq - 3 10"]
+[SetUp "1"]
+
+{ Allowed knight fork. You played g6. Find a better move before viewing the continuation. } 10... f5 ( 10... g6 { Actual move and checked opponent refutation. } 11. Nf6+ Kd8 12. Nxg4 f5 13. exf5 gxf5 14. Ne3 ) 11. Ne3 *
+
+[Event "Allowed fork with another piece"]
+[Site "https://lichess.org/PpuOGqz5"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r4r1k/1pqn2pp/5p2/p2Q1b2/3P4/P1P1B3/4BPPP/R3K2R w KQ - 1 17"]
+[SetUp "1"]
+
+{ Allowed fork with another piece. You played Qxf5. Find a better move before viewing the continuation. } 17. O-O ( 17. Qxf5 { Actual move and checked opponent refutation. } 17... Qxc3+ 18. Kd1 Qxa1+ 19. Kd2 Qxh1 20. Bd3 Qxh2 ) 17... Bg6 18. Qb5 f5 19. d5 f4 20. Bd4 f3 21. Bxf3 *
+
+[Event "Allowed short mating sequence"]
+[Site "https://lichess.org/CdDIylyB"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "3r1r2/pp3pk1/3N4/2bB2p1/2P1R3/8/PP4P1/5R1K w - - 2 30"]
+[SetUp "1"]
+
+{ Allowed short mating sequence. You played Nxb7. Find a better move before viewing the continuation. } 30. Nf5+ ( 30. Nxb7 { Actual move and checked opponent refutation. } 30... Rh8+ 31. Rh4 Rxh4# ) 30... Kg6 31. g4 a5 32. Ng3 Rh8+ 33. Kg2 Rh7 34. Re2 *
+
+[Event "Allowed absolute pin tactic"]
+[Site "https://lichess.org/co69A7ox"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r1b1q1k1/pp3ppp/3P4/2Q5/4r3/8/PPP1BPPP/3RK2R w K - 2 15"]
+[SetUp "1"]
+
+{ Allowed absolute pin tactic. You played Qb5. Find a better move before viewing the continuation. } 15. Rd2 ( 15. Qb5 { Actual move and checked opponent refutation. } 15... Qxb5 16. O-O Qxe2 17. f3 Qe3+ 18. Rf2 Bd7 ) 15... Bd7 16. f3 Re5 17. Qd4 Bc6 18. Kf2 Rd5 19. Qf4 *
+
+[Event "Endgame decision in rook with minor piece material"]
+[Site "https://lichess.org/TzZCoUIw"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "4k2r/3R3p/2Pp4/2n1p1p1/2P3P1/7P/7K/8 w - - 2 37"]
+[SetUp "1"]
+
+{ Endgame decision in rook with minor piece material. You played Rxd6. Find a better move before viewing the continuation. } 37. Ra7 ( 37. Rxd6 { Actual move and checked opponent refutation. } 37... Ke7 38. Rd5 Ne6 39. h4 h6 40. Rd7+ Kf6 ) 37... Kd8 *
+
+[Event "Endgame decision in single rook versus single rook"]
+[Site "https://lichess.org/uDioHwT0"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "8/8/6kp/R1P3p1/5p1P/P1r2PK1/6P1/8 w - - 0 43"]
+[SetUp "1"]
+
+{ Endgame decision in single rook versus single rook. You played Kg4. Find a better move before viewing the continuation. } 43. Kh3 ( 43. Kg4 { Actual move and checked opponent refutation. } 43... h5+ 44. Kh3 g4+ 45. Kh2 g3+ 46. Kh3 Rc1 ) 43... Kh5 *
+
+[Event "Endgame decision in double rook endings"]
+[Site "https://lichess.org/4ik6lbk1"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "5k2/R6R/3p1r1p/3P4/4P3/6PK/2p2r1P/8 b - - 2 34"]
+[SetUp "1"]
+
+{ Endgame decision in double rook endings. You played Kg8. Find a better move before viewing the continuation. } 34... Rf7 ( 34... Kg8 { Actual move and checked opponent refutation. } 35. Rag7+ Kf8 36. Rc7 Kg8 37. Rhg7+ Kf8 38. Rgd7 ) 35. Raxf7+ *
+
+[Event "Endgame decision in king and pawn"]
+[Site "https://lichess.org/eLt51sSg"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "8/4k3/1p2p1p1/p5K1/5P2/4P3/1P3P1P/8 b - - 1 35"]
+[SetUp "1"]
+
+{ Endgame decision in king and pawn. You played Kf7. Find a better move before viewing the continuation. } 35... a4 ( 35... Kf7 { Actual move and checked opponent refutation. } 36. Kg4 ) 36. f5 *
+
+[Event "Endgame decision in knight versus pawns or bare king"]
+[Site "https://lichess.org/AYZVXDYq"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "8/8/6K1/p4N2/Pp6/1k6/6PP/8 b - - 1 45"]
+[SetUp "1"]
+
+{ Endgame decision in knight versus pawns or bare king. You played Kc3. Find a better move before viewing the continuation. } 45... Kxa4 ( 45... Kc3 { Actual move and checked opponent refutation. } 46. Ne3 Kd3 47. Nd1 Kd2 48. Nb2 b3 49. Kf5 ) 46. h4 b3 47. h5 b2 48. h6 b1=Q 49. h7 Qb6+ *
+
+[Event "Endgame decision in single rook versus single rook"]
+[Site "https://lichess.org/qlnvDLnu"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "8/6pk/5p2/4pP2/4P2P/3P4/2r1RK2/8 b - - 0 61"]
+[SetUp "1"]
+
+{ Endgame decision in single rook versus single rook. You played Rxe2+. Find a better move before viewing the continuation. } 61... Rc3 ( 61... Rxe2+ { Actual move and checked opponent refutation. } 62. Kxe2 ) 62. Ke3 Rc1 63. Kd2 Rh1 64. Kc3 Rxh4 65. Ra2 Rf4 *
+
