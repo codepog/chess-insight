@@ -1,6 +1,8 @@
-# Chess Insight
+# Chess Insight — a Lichess learning proposal
 
-A personal chess improvement case study built from **chickenboi2's Lichess games**. The product thesis is simple: turn repeated mistakes into focused practice, then check whether the lesson transfers to new decisions.
+[Open the live demo](https://codepog.github.io/chess-insight/)
+
+A product and business strategy proposal for **Lichess**, grounded in **chickenboi2's public games**. Connect existing analysis to a focused practice plan and a separate assessment, while preserving free access and operating within a sustainable donation-funded budget.
 
 ## Run locally
 
@@ -18,7 +20,7 @@ Open http://127.0.0.1:4173. `npm start` runs the same command. Use an HTTP serve
 - **Game explorer:** 20 curated positions, original clock and move, better continuation and opponent refutation. Category and time-control filters; keyboard playback with arrow keys.
 - **Practice:** 20 review positions and six separate assessment positions from different source games. All 701 legal candidates have offline engine evaluations. Sound alternatives count. First attempts and reveals are stored only in the current browser. Retrying cannot raise the first-attempt score; revealing a solution excludes it.
 - **Model lab:** the saved logistic regression performs actual inference in the browser on 50 held-out examples. Includes the whole-game chronological split, baselines, risk groups, coefficients and limits.
-- **Product thesis:** target customer, competitive context, proposed experience, an experiment to measure transfer, and commercial hypotheses.
+- **Business case:** problem definition, nonprofit objectives, existing tools and competitors, delivery choices, a controlled pilot, a hypothetical cost scenario, and an explicit rollout decision.
 
 ## What the model does
 
@@ -51,6 +53,6 @@ Run `npm run check` with Node 18 or newer. The implementation was also reviewed 
 
 The interface follows Apple's principles of clarity, hierarchy and deference to content: system typography, a quiet horizontal navigation bar, generous spacing and controls near the board. References: [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/), [Apple Design Resources](https://developer.apple.com/design/resources/), and the [community Apple Design System catalog](https://github.com/mjmirza/apple-design-system). No Apple font, icon or UI-kit files are distributed. No Chess.com or Lichess logos or interface code are used. Chess pieces are Cburnett designs distributed by python-chess; see `THIRD_PARTY_NOTICES.md`.
 
-The product distinction demonstrated here is the separation of review success from first-exposure assessment, with follow-up real games explicitly unmeasured. Chess.com already offers Game Review retries, Insights, course recommendations and Skills; Aimchess already offers personalized plans. This case does not claim universal feature novelty or established learning improvement. Independent case study, not affiliated with these products.
+The product distinction demonstrated here is a free guided-learning proposal for Lichess, with review success separated from first-exposure assessment and follow-up real games explicitly unmeasured. The business case evaluates learning, repeat use, cost and trust; it does not propose subscriptions or paid feature access. Chess.com already offers Game Review retries, Insights, course recommendations and Skills; Aimchess already offers personalized plans. This case does not claim universal feature novelty or established learning improvement. Independent case study, not affiliated with these products.
 
 This source is distributed under GPL-3.0-or-later. Public game records are attributed to their Lichess source links. Product claims are sourced on the Product thesis page; proposed business and learning outcomes are explicitly hypotheses.
