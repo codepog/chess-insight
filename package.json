@@ -5,6 +5,7 @@
   "description": "Personal chess performance and product strategy case study",
   "scripts": {
     "start": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
-    "check": "node --check dist/app.js && node scripts/check-data.cjs"
+    "check": "node --check dist/app.js && node scripts/check-data.cjs",
+    "version-assets": "node scripts/version-assets.cjs"
   }
 }

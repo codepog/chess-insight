@@ -47,7 +47,7 @@ The workflow uploads only `dist/`, so the raw analysis and source scripts are no
 - `analysis/`: engine-labeling, motif classification and training source, plus instructions and provenance.
 - `dist/assets/`: saved model, evaluation report and practice PGN for direct download.
 
-Run `npm run check` with Node 18 or newer. The implementation was also reviewed in a browser at desktop and mobile sizes, including move grading, playback, clock-feature inference and saved practice progress.
+After editing JavaScript or CSS, run `npm run version-assets` to update the asset URLs. Run `npm run check` with Node 18 or newer. The implementation was also reviewed in a browser at desktop and mobile sizes, including move grading, playback, clock-feature inference and saved practice progress.
 
 ## Attribution
 
